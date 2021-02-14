@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import axios from "axios";
 import "./EventInfoBox.css";
 import {selectUser} from "../context/reducer";
@@ -10,14 +10,15 @@ function EventInfoBox( {id}) {
     const [email, setEmail] = useState("");
     const [photo, setPhoto] = useState("");
     const user = useSelector(selectUser);
-
+    
+    console.log(user.email);
 
 
     useEffect(() => {
         axios.get("https://warm-dusk-08113.herokuapp.com/matchings/getMatch/" + id)
             .then(res => {
                 for (let i = 0; i < res.data.matchings.length; i++) {
-                    if (res.data.matchings[i].email === user.email) {
+                    if (res.data.matchings[i].email.toLowerCase() === user.email.toLowerCase()) {
                         setName(res.data.matchings[i].match.name);
                         setEmail(res.data.matchings[i].match.email);
                         getAvatar(res.data.matchings[i].match.email);
