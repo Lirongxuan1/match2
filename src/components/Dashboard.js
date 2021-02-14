@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectUser } from '../context/reducer';
-import { selectEvents } from "../context/eventReducer";
+//import { selectEvents } from "../context/eventReducer";
 import "./Dashboard.css";
 import EventInfoBox from "./EventInfoBox";
 
