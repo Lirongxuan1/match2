@@ -1,0 +1,18 @@
+.eventInfoBox {
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 2px 5px 10px pink;
+    background-color: #FFE4E1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.MuiAvatar-root {
+    width: 50px;
+    height: 50px;
+}

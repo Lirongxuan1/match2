@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    padding: 10px;
+    box-shadow: 0px 5px 15px pink;
+    background-color: #FFE4E1;
+}
+
+.header > h1 {
+    margin: 0;
+    flex: 1;
+    font-size: 24pt;
+}
+
+.avatarBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.avatarBox > .username {
+    font-size: 10pt;
+}

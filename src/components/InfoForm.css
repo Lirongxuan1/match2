@@ -1,0 +1,15 @@
+.infoForm {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoForm__counter {
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+}
