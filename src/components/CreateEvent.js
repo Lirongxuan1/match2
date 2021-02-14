@@ -5,11 +5,11 @@ import "react-datepicker/dist/react-datepicker.css";
 import "./InfoForm.css";
 import FRQBox from "./FRQBox";
 import MCQBox from "./MCQBox";
-import { useDispatch, useSelector } from 'react-redux';
-import { setUser, clearUser, selectUser } from '../context/reducer';
+//import { useDispatch, useSelector } from 'react-redux';
+//import { setUser, clearUser, selectUser } from '../context/reducer';
 
 function CreateEvent() {
-    const user = useSelector(selectUser);
+    //const user = useSelector(selectUser);
     // state for number of frq questions
     const [numFRQ, setNumFRQ] = useState(0);
     // array to hold frqBox components

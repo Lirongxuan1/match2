@@ -17,7 +17,7 @@ function EventInfoBox( {id}) {
         axios.get("https://warm-dusk-08113.herokuapp.com/matchings/getMatch/" + id)
             .then(res => {
                 for (let i = 0; i < res.data.matchings.length; i++) {
-                    if (res.data.matchings[i].email == user.email) {
+                    if (res.data.matchings[i].email === user.email) {
                         setName(res.data.matchings[i].match.name);
                         setEmail(res.data.matchings[i].match.email);
                         getAvatar(res.data.matchings[i].match.email);

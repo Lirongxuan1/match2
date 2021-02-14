@@ -7,7 +7,7 @@ import EventInfoBox from "./EventInfoBox";
 
 function Dashboard() {
     const user = useSelector(selectUser);
-    const events = useSelector(selectEvents);
+    //const events = useSelector(selectEvents);
     const eventList = [];
 
     const generateEvents = () => {
